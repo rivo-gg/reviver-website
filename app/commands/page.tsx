@@ -56,9 +56,7 @@ export default function Commands() {
         <title>Reviver - Commands</title>
       </Head>
       <main className="w-full mx-auto max-w-8xl px-8">
-        <h1 className="text-4xl font-bold text-white">
-          Commands
-        </h1>
+        <h1 className="text-4xl font-bold text-white">Commands</h1>
 
         <div className="mt-8 flex flex-col gap-4">
           <h2 className="select-none font-semibold text-foreground/70">

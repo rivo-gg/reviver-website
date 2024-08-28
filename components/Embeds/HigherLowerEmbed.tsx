@@ -44,19 +44,20 @@ const HigherLowerEmbed: FC<MainProps> = ({ currentDate }) => {
           lightTheme={theme === 'light'}
         />
         <DiscordEmbed
-              slot="embeds"
-              color="#1e88e5"
-            >
-              <DiscordEmbedDescription slot="description">
-              Berries are simple fruits stemming from one flower. This means that pineapples, bananas, watermelon, pumpkins, and avocados are berries.
-              </DiscordEmbedDescription>
-              <DiscordEmbedFooter
-                slot="footer"
-                footerImage="./staff/DecieBoi.webp"
-              >
-                Requested by decieboi | TOPIC ID: 420
-              </DiscordEmbedFooter>
-            </DiscordEmbed>
+          slot="embeds"
+          color="#1e88e5"
+        >
+          <DiscordEmbedDescription slot="description">
+            Berries are simple fruits stemming from one flower. This means that
+            pineapples, bananas, watermelon, pumpkins, and avocados are berries.
+          </DiscordEmbedDescription>
+          <DiscordEmbedFooter
+            slot="footer"
+            footerImage="./staff/DecieBoi.webp"
+          >
+            Requested by decieboi | TOPIC ID: 420
+          </DiscordEmbedFooter>
+        </DiscordEmbed>
       </DiscordMessage>
 
       <DiscordMessage
@@ -64,7 +65,7 @@ const HigherLowerEmbed: FC<MainProps> = ({ currentDate }) => {
         author={profiles.dominik.author}
         avatar={profiles.dominik.avatar}
         roleColor={profiles.dominik.roleColor}
-         // @ts-ignore
+        // @ts-ignore
         clanIcon={profiles.dominik.clanIcon}
         clanTag={profiles.dominik.clanTag}
         lightTheme={theme === 'light'}

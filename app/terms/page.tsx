@@ -3,9 +3,7 @@ import Link from 'next/link'
 export default function Terms() {
   return (
     <main className="flex mx-auto w-full max-w-8xl flex-col gap-8 px-8 text-foreground/70">
-      <h1 className="text-4xl font-bold text-white">
-        Terms of Service
-      </h1>
+      <h1 className="text-4xl font-bold text-white">Terms of Service</h1>
       <div>
         <h3 className="my-4 text-lg font-bold text-foreground">
           Last updated and effective: August 28, 2024
@@ -19,8 +17,8 @@ export default function Terms() {
           and any additional terms that may be provided by the Company. If you
           do not agree to these Terms, you may not use Reviver.
           <br />
-          Reviver is a bot for the chat and social platform
-          &quot;Discord&quot; (accessible at{' '}
+          Reviver is a bot for the chat and social platform &quot;Discord&quot;
+          (accessible at{' '}
           <Link
             href="https://discord.com"
             target={'_blank'}
@@ -204,14 +202,14 @@ export default function Terms() {
           9. Governing Law
         </h3>
         <p>
-          These Terms and your use of Reviver will be governed by and
-          construed in accordance with the laws of Germany. Any dispute arising
-          out of or in connection with these Terms or Reviver will be resolved
-          through binding arbitration in accordance with the rules of the
-          International Chamber of Commerce. You agree that we may take action
-          against you if you attack or harm our services. You agree that we may
-          use any data collected for the purpose of taking action to exclude you
-          from the Service.
+          These Terms and your use of Reviver will be governed by and construed
+          in accordance with the laws of Germany. Any dispute arising out of or
+          in connection with these Terms or Reviver will be resolved through
+          binding arbitration in accordance with the rules of the International
+          Chamber of Commerce. You agree that we may take action against you if
+          you attack or harm our services. You agree that we may use any data
+          collected for the purpose of taking action to exclude you from the
+          Service.
         </p>
 
         <h3 className="my-4 text-lg font-bold text-foreground">
@@ -222,10 +220,10 @@ export default function Terms() {
           and the Company makes no warranties of any kind, express or implied,
           including but not limited to warranties of merchantability, fitness
           for a particular purpose, and non-infringement. The Company does not
-          guarantee that Reviver will be available at all times or that it
-          will be error-free. In no event shall we be liable for any damages
-          arising from the use of the Discord Bot. It is therefore recommended
-          to use it only with the required permissions.
+          guarantee that Reviver will be available at all times or that it will
+          be error-free. In no event shall we be liable for any damages arising
+          from the use of the Discord Bot. It is therefore recommended to use it
+          only with the required permissions.
         </p>
 
         <h3 className="my-4 text-lg font-bold text-foreground">

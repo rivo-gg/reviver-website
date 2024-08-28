@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     images: 'https://cdn.wouldyoubot.gg/bots/reviver/Reviver-Front.png',
     title: 'Reviver - Dead Chat Bot',
     description:
-      'Reviver provides your server with tons of interesting topics, fun facts, and memes to kill boredom.',
+      'Reviver provides your server with tons of interesting topics, fun facts, and memes to kill boredom.'
   },
   icons: {
     icon: '/favicon.ico',

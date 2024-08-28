@@ -4,10 +4,10 @@ import NeverHaveIEverEmbed from '@/components/Embeds/NeverHaveIEverEmbed'
 import DailyMessageEmbed from '@/components/Embeds/DailyMessageEmbed'
 import HigherLowerEmbed from '@/components/Embeds/HigherLowerEmbed'
 import MainDiscordEmbed from '@/components/Embeds/MainDiscordEmbed'
-import { AvatarGroup } from '../avatar-group'
 import { domAnimation, LazyMotion, m } from 'framer-motion'
 import ServerMarquee from '@/components/ServerMarquee'
 import FeatureItem from '@/components/FeatureItem'
+import { AvatarGroup } from '../avatar-group'
 import { LandingWave } from '../LandingWave'
 import Button from '@/components/Button'
 import Link from 'next/link'
@@ -31,7 +31,7 @@ export function HomeContent({
     date.getMonth() + 1,
     date.getDate()
   ].join('/')} - Daily Message`
-  
+
   return (
     <LazyMotion features={domAnimation}>
       <section className="mt-0 sm:mt-16 lg:mt-28 flex w-full max-w-8xl flex-col items-center justify-between gap-16 px-8 text-center lg:flex-row lg:text-left">
@@ -43,20 +43,24 @@ export function HomeContent({
           className="flex flex-col items-center lg:block"
         >
           <h1 className="text-[2rem] sm:text-5xl md:text-6xl font-bold leading-normal mb-8">
-            <span className="text-indigo-500 hover:text-indigo-500/90">Revive</span> Your
-            <br />
-            <span>
-              Discord
+            <span className="text-indigo-500 hover:text-indigo-500/90">
+              Revive
             </span>{' '}
-            <span >
-              Server
-            </span>
+            Your
+            <br />
+            <span>Discord</span> <span>Server</span>
           </h1>
           <p className="text-lg text-neutral-700 dark:text-neutral-300">
-          Reviver provides your server with tons of interesting topics, fun facts, and memes to kill boredom. If you want to revive your chat, Reviver is the right choice! {' '}
+            Reviver provides your server with tons of interesting topics, fun
+            facts, and memes to kill boredom. If you want to revive your chat,
+            Reviver is the right choice!{' '}
           </p>
           <div className="flex flex-col lg:flex-row mt-8 items-center gap-4">
-            <AvatarGroup avatars={servers.sort((a, b) => b.memberCount - a.memberCount).slice(0, 5)} />
+            <AvatarGroup
+              avatars={servers
+                .sort((a, b) => b.memberCount - a.memberCount)
+                .slice(0, 5)}
+            />
             <span className="text-foreground/50">
               Trusted by the biggest servers!
             </span>
@@ -93,7 +97,7 @@ export function HomeContent({
       >
         <LandingWave className="text-background-darker dark:text-background-dark -mb-32" />
         <div className="w-full bg-background-darker dark:bg-background-dark px-8 pb-12 text-center text-3xl md:text-4xl text-foreground md:-mt-20 md:pb-28">
-          <div className='w-dvw px-8 mx-auto'>
+          <div className="w-dvw px-8 mx-auto">
             <h2>
               Trusted by{' '}
               <span className="bg-indigo-500 bg-clip-text font-bold text-transparent">
@@ -109,8 +113,7 @@ export function HomeContent({
               users entertained
             </h3>
           </div>
-          <div className='w-dvw mx-auto overflow-x-hidden'>
-
+          <div className="w-dvw mx-auto overflow-x-hidden">
             <ServerMarquee
               servers={servers.slice(0, Math.ceil(servers.length / 2))}
               speed={40}
@@ -149,7 +152,8 @@ export function HomeContent({
                 Increase User Engagement
               </h4>
               <p className="text-center text-lg text-foreground/70 md:text-left">
-              Keep your server active with interesting facts to think about and discuss.
+                Keep your server active with interesting facts to think about
+                and discuss.
               </p>
             </>
           }
@@ -162,7 +166,8 @@ export function HomeContent({
                 Revive Your Chat
               </h4>
               <p className="text-center text-lg text-foreground/70 md:text-left">
-                Revive your chat with tons of interesting topics, fun facts, and memes to kill boredom.
+                Revive your chat with tons of interesting topics, fun facts, and
+                memes to kill boredom.
               </p>
             </>
           }
@@ -179,7 +184,8 @@ export function HomeContent({
               </h4>
               <p className="text-center text-lg text-foreground/70 md:text-left">
                 Upgrade your server with Reviver, featuring a wide variety of
-                topics, interesting facts, and would you rather questions to keep your server active.
+                topics, interesting facts, and would you rather questions to
+                keep your server active.
               </p>
             </>
           }

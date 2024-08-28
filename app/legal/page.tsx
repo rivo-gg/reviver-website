@@ -3,9 +3,7 @@ import Link from 'next/link'
 export default function legalnotice() {
   return (
     <main className="flex mx-auto w-full max-w-8xl flex-col gap-8 px-8 text-foreground/70">
-      <h1 className="text-4xl font-bold text-white">
-        Legal Notice
-      </h1>
+      <h1 className="text-4xl font-bold text-white">Legal Notice</h1>
       <p>
         <span
           className="mr-1.5 text-lg"

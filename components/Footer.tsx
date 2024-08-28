@@ -14,7 +14,7 @@ const Footer = async () => {
       name: 'Commands',
       link: '/commands',
       EventTarget: '_self'
-    },
+    }
   ]
 
   const Links = [
@@ -50,7 +50,7 @@ const Footer = async () => {
       name: 'Terms of Service',
       link: '/terms',
       EventTarget: '_self'
-    },
+    }
   ]
 
   return (

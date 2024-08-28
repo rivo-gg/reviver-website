@@ -33,7 +33,7 @@ const config = {
           customDarkBgTransparent: 'rgb(31, 32, 35, 0.7)',
           customDarkBgTransparentDarker: 'rgb(0,0,0,0.5)',
           customDarkBgTransparentLighter: 'rgb(48, 49, 54, 0.7)',
-          blue: { 100: '#4FC9FF', 200: '#87CBE9', 300: '#87CBE9' },
+          blue: { 100: '#4FC9FF', 200: '#87CBE9', 300: '#87CBE9' }
         },
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
@@ -101,7 +101,7 @@ const config = {
         ['red-glow']: ['2px 2px 10px #f00505'],
         ['blue-glow']: ['2px 2px 10px #0598f6'],
         ['gold-glow']: ['2px 2px 10px #eab308']
-      },
+      }
     }
   },
   plugins: [require('tailwindcss-animate')]

@@ -3,20 +3,18 @@ import Link from 'next/link'
 export default function Privacy() {
   return (
     <main className="flex mx-auto w-full max-w-8xl flex-col gap-8 px-8 text-foreground/70">
-      <h1 className="text-4xl font-bold text-white">
-        Privacy Policy
-      </h1>
+      <h1 className="text-4xl font-bold text-white">Privacy Policy</h1>
       <div>
         <h3 className="mb-4 text-lg font-bold text-foreground">
           Last updated and effective August 28, 2024
         </h3>
         <p>
           Thank you for choosing to be part of our community at Reviver
-          (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;). We are
-          committed to protecting your personal information and your right to
-          privacy. If you have any questions or concerns about this privacy
-          notice or our practices with regard to your personal information,
-          please contact us at dominik@rivo.gg.
+          (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;). We are committed
+          to protecting your personal information and your right to privacy. If
+          you have any questions or concerns about this privacy notice or our
+          practices with regard to your personal information, please contact us
+          at dominik@rivo.gg.
           <br />
           <br />
           This privacy notice describes how we might use your information if

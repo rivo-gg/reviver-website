@@ -114,7 +114,7 @@ const Navbar = () => {
               Premium
               <Crown />
             </Link>
-             <DiscordInviteButton className="h-16 rounded-[10px] px-6" />
+            <DiscordInviteButton className="h-16 rounded-[10px] px-6" />
           </div>
         </div>
         <div className="hidden h-16 min-w-fit items-center justify-center md:flex gap-1 p-1 rounded-xl border-2 border-foreground/5 bg-background-light/90 backdrop-blur">
