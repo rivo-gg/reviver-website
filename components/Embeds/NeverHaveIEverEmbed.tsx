@@ -59,6 +59,7 @@ const NeverHaveIEverEmbed = () => {
         verified={profiles.paulos.verified}
         clanIcon={profiles.paulos.clanIcon}
         clanTag={profiles.paulos.clanTag}
+        lightTheme={theme === 'light'}
       >
         Wow, thats a lot of water!
       </DiscordMessage>

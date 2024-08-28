@@ -23,14 +23,6 @@ export function HomeContent({
   serverCount,
   servers
 }: HomeContentProps) {
-  const date = new Date()
-  const currentDate = date.toLocaleString()
-
-  const threadName = `${[
-    date.getFullYear(),
-    date.getMonth() + 1,
-    date.getDate()
-  ].join('/')} - Daily Message`
 
   return (
     <LazyMotion features={domAnimation}>
@@ -145,7 +137,7 @@ export function HomeContent({
 
         <FeatureItem
           reverse
-          right={<DailyMessageEmbed threadName={threadName} />}
+          right={<DailyMessageEmbed />}
           left={
             <>
               <h4 className="text-center text-3xl font-bold md:text-left">
@@ -171,7 +163,7 @@ export function HomeContent({
               </p>
             </>
           }
-          right={<HigherLowerEmbed currentDate={currentDate} />}
+          right={<HigherLowerEmbed />}
         />
 
         <FeatureItem

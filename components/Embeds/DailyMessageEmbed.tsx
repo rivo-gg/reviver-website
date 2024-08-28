@@ -9,13 +9,8 @@ import {
 } from '@skyra/discord-components-react'
 import profiles from '@/data/profiles.json'
 import { useTheme } from 'next-themes'
-import { FC } from 'react'
 
-interface MainProps {
-  threadName: string
-}
-
-const DailyMessageEmbed: FC<MainProps> = ({ threadName }) => {
+const DailyMessageEmbed = () => {
   const { theme } = useTheme()
   return (
     <DiscordMessages

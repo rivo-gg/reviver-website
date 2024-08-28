@@ -13,13 +13,8 @@ import {
 } from '@skyra/discord-components-react'
 import profiles from '@/data/profiles.json'
 import { useTheme } from 'next-themes'
-import { FC } from 'react'
 
-interface MainProps {
-  currentDate: string
-}
-
-const HigherLowerEmbed: FC<MainProps> = ({ currentDate }) => {
+const HigherLowerEmbed = () => {
   const { theme } = useTheme()
   return (
     <DiscordMessages
