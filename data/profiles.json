@@ -1,17 +1,10 @@
 {
-  "wouldyou": {
-    "author": "Would You",
+  "reviver": {
+    "author": "Reviver",
     "avatar": "./Logo.svg",
     "roleColor": "#1e88e5",
     "bot": true,
     "verified": true
-  },
-  "sky": {
-    "author": "ForGetFulSkyBro",
-    "avatar": "./staff/Sky.webp",
-    "roleColor": "#f1c40f",
-    "bot": false,
-    "verified": false
   },
   "dominik": {
     "author": "Dominik",
@@ -22,24 +15,17 @@
     "clanIcon": "heart",
     "clanTag": "Cute"
   },
-  "nightkiller": {
-    "author": "NightKiller_2",
-    "avatar": "./staff/Nightkiller.webp",
-    "roleColor": "#00fff5",
+  "vcokltfre": {
+    "author": "vcokltfre",
+    "avatar": "./staff/vcokltfre.webp",
+    "roleColor": "#55CBCD",
     "bot": false,
     "verified": false
   },
-  "pod": {
-    "author": "Pod",
-    "avatar": "./staff/Pod.webp",
-    "roleColor": "#F1327F",
-    "bot": false,
-    "verified": false
-  },
-  "finn": {
-    "author": "Finn",
-    "avatar": "./staff/Finn.webp",
-    "roleColor": "#23CE6B",
+  "decieboi": {
+    "author": "DecieBoi",
+    "avatar": "./staff/DecieBoi.webp",
+    "roleColor": "#fffdc5",
     "bot": false,
     "verified": false
   },
@@ -52,18 +38,13 @@
     "clanIcon": "water",
     "clanTag": "CSS3"
   },
-  "invalid": {
-    "author": "InvalidKiller",
-    "avatar": "./staff/Invalid.webp",
-    "roleColor": "#f8dd3f",
-    "bot": false,
-    "verified": false
-  },
-  "gersti": {
-    "author": "Gersti",
-    "avatar": "./staff/Gersti.webp",
+  "seek": {
+    "author": "Seek",
+    "avatar": "./staff/Seek.webp",
     "roleColor": "#ff69eb",
     "bot": false,
-    "verified": false
+    "verified": false,
+    "clanIcon": "heart",
+    "clanTag": "Cute"
   }
 }

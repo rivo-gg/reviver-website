@@ -3,20 +3,20 @@ import Link from 'next/link'
 export default function Privacy() {
   return (
     <main className="flex mx-auto w-full max-w-8xl flex-col gap-8 px-8 text-foreground/70">
-      <h1 className="text-4xl font-bold text-brand-red-100 drop-shadow-red-glow">
+      <h1 className="text-4xl font-bold text-white">
         Privacy Policy
       </h1>
       <div>
         <h3 className="mb-4 text-lg font-bold text-foreground">
-          Last updated and effective March 08, 2024
+          Last updated and effective August 28, 2024
         </h3>
         <p>
-          Thank you for choosing to be part of our community at Would
-          You(&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;). We are
+          Thank you for choosing to be part of our community at Reviver
+          (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;). We are
           committed to protecting your personal information and your right to
           privacy. If you have any questions or concerns about this privacy
           notice or our practices with regard to your personal information,
-          please contact us at dominik@wouldyoubot.com.
+          please contact us at dominik@rivo.gg.
           <br />
           <br />
           This privacy notice describes how we might use your information if
@@ -26,20 +26,12 @@ export default function Privacy() {
           <li>
             - Visit our website at{' '}
             <Link
-              href="https://wouldyoubot.gg"
+              href="https://reviverbot.com/"
               target={'_blank'}
               className="text-foreground underline"
             >
-              https://wouldyoubot.gg
+              https://reviverbot.com
             </Link>{' '}
-            or{' '}
-            <Link
-              href="https://wouldyoubot.com"
-              target={'_blank'}
-              className="text-foreground underline"
-            >
-              https://wouldyoubot.com
-            </Link>
           </li>
           <li>
             - Engage with us in other related ways — including any sales,
@@ -115,7 +107,7 @@ export default function Privacy() {
         <ul>
           <li>
             - us offline or through any other means, including on any other
-            website operated by Would You or any third party;
+            website operated by Reviver or any third party;
           </li>
           <p>or</p>
           <li>
@@ -216,7 +208,7 @@ export default function Privacy() {
           Personally Identifiable Information. On our website, we only collect
           personally identifiable information from individuals that they provide
           to us voluntarily. This means we do not require you to register or
-          provide information to us in order to view our website. Would You only
+          provide information to us in order to view our website. Reviver only
           gathers personally identifiable data through our website, such as an
           email address, when voluntarily submitted by a visitor. Once
           collected, we may combine this information with other information
@@ -251,7 +243,7 @@ export default function Privacy() {
           of any such linked website or any link contained in any linked
           website. We provide such links only as a convenience, and the
           inclusion of a link on the website does not imply endorsement of the
-          linked website by Would You. If you provide any personal data through
+          linked website by Reviver. If you provide any personal data through
           any such third-party website, your transaction will occur on the third
           party&apos;s website (not this website) and the personal data you
           provide will be collected by and controlled by the privacy policy of
@@ -371,7 +363,7 @@ export default function Privacy() {
         </h3>
         <p>
           If you have any questions or comments about this notice, you may email
-          us at dominik@wouldyoubot.com.
+          us at dominik@rivo.gg.
         </p>
         <h3 className="my-4 text-lg font-bold text-foreground">
           How can you review, update, or delete the data we collect from you?
@@ -383,11 +375,11 @@ export default function Privacy() {
           request to review, update, or delete your personal Information, please
           visit:{' '}
           <Link
-            href="/discord"
+            href="/support"
             target={'_blank'}
             className="text-foreground underline"
           >
-            https://wouldyoubot.gg/discord
+            https://reviverbot.com/support
           </Link>
           .
         </p>

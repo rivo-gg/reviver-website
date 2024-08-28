@@ -1,30 +1,28 @@
-import { HomeSchemaMetadata } from '@/components/Homepage/SchemaMetadata'
 import { getRandomQuestion } from '@/helpers/getRandomQuestion'
 import { HomeContent } from '@/components/Homepage/Content'
 import type { Metadata, Viewport } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Would You - The Discord Bot',
+  title: 'Reviver - Dead Chat Bot',
   description:
-    'Would you lets you play Would You Rather, Never Have I Ever, Higher or Lower, Truth or Dare and What Would You Do on Discord!',
+    'Reviver provides your server with tons of interesting topics, fun facts, and memes to kill boredom.',
   robots: 'index, follow',
   publisher: 'Rivo',
-  metadataBase: new URL('https://wouldyoubot.gg'),
+  metadataBase: new URL('https://reviverbot.com'),
   openGraph: {
-    title: 'Would You - The Discord Bot',
+    title: 'Reviver - Dead Chat Bot',
     description:
-      'Would you lets you play Would You Rather, Never Have I Ever, Higher or Lower, Truth or Dare and What Would You Do on Discord!',
+      'Reviver provides your server with tons of interesting topics, fun facts, and memes to kill boredom.',
     type: 'website',
-    url: 'https://wouldyoubot.gg',
-    images: 'https://i.imgur.com/BsWSxze.png'
+    url: 'https://reviverbot.com',
+    images: 'https://cdn.wouldyoubot.gg/bots/reviver/Reviver-Front.png'
   },
   twitter: {
     card: 'summary_large_image',
-    images: 'https://i.imgur.com/BsWSxze.png',
-    title: 'Would You - The Discord Bot',
+    images: 'https://cdn.wouldyoubot.gg/bots/reviver/Reviver-Front.png',
+    title: 'Reviver - Dead Chat Bot',
     description:
-      'Would you lets you play Would You Rather, Never Have I Ever, Higher or Lower, Truth or Dare and What Would You Do on Discord!',
-    site: '@WouldYouBot'
+      'Reviver provides your server with tons of interesting topics, fun facts, and memes to kill boredom.',
   },
   icons: {
     icon: '/favicon.ico',
@@ -34,19 +32,19 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#0598F6'
+  themeColor: '#87cbe9'
 }
 
 const Home = async () => {
   const response = await fetch(
-    'https://japi.rest/discord/v1/application/981649513427111957/'
+    'https://japi.rest/discord/v1/application/385824713819029504/'
   )
 
   const data = await response.json()
   const serverCount = data.data.bot.approximate_guild_count ?? 0
 
   const serverResponse = await fetch(
-    'https://liberal-snail-47202.upstash.io/get/server_count',
+    'https://liberal-snail-47202.upstash.io/get/server_count_reviver',
     {
       method: 'POST',
       headers: {
@@ -63,13 +61,11 @@ const Home = async () => {
     <>
       <main className="flex w-full flex-col items-center overflow-x-hidden">
         <HomeContent
-          initialRatherQuestion={getRandomQuestion('rather')}
-          initialNhieQuestion={getRandomQuestion('nhie')}
+          initialRatherQuestion={getRandomQuestion('topic')}
           serverCount={serverCount}
           servers={filteredServers}
         />
       </main>
-      <HomeSchemaMetadata />
     </>
   )
 }

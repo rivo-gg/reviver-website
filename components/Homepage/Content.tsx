@@ -4,7 +4,7 @@ import NeverHaveIEverEmbed from '@/components/Embeds/NeverHaveIEverEmbed'
 import DailyMessageEmbed from '@/components/Embeds/DailyMessageEmbed'
 import HigherLowerEmbed from '@/components/Embeds/HigherLowerEmbed'
 import MainDiscordEmbed from '@/components/Embeds/MainDiscordEmbed'
-import { AvatarGroup, AvatarsListProps } from '../avatar-group'
+import { AvatarGroup } from '../avatar-group'
 import { domAnimation, LazyMotion, m } from 'framer-motion'
 import ServerMarquee from '@/components/ServerMarquee'
 import FeatureItem from '@/components/FeatureItem'
@@ -14,14 +14,12 @@ import Link from 'next/link'
 
 interface HomeContentProps {
   initialRatherQuestion: string
-  initialNhieQuestion: string
   serverCount: number
   servers: any[]
 }
 
 export function HomeContent({
   initialRatherQuestion,
-  initialNhieQuestion,
   serverCount,
   servers
 }: HomeContentProps) {
@@ -33,7 +31,7 @@ export function HomeContent({
     date.getMonth() + 1,
     date.getDate()
   ].join('/')} - Daily Message`
-
+  
   return (
     <LazyMotion features={domAnimation}>
       <section className="mt-0 sm:mt-16 lg:mt-28 flex w-full max-w-8xl flex-col items-center justify-between gap-16 px-8 text-center lg:flex-row lg:text-left">
@@ -45,25 +43,22 @@ export function HomeContent({
           className="flex flex-col items-center lg:block"
         >
           <h1 className="text-[2rem] sm:text-5xl md:text-6xl font-bold leading-normal mb-8">
-            Entertain Your
+            <span className="text-indigo-500 hover:text-indigo-500/90">Revive</span> Your
             <br />
-            <span className="text-brand-red-100 drop-shadow-red-glow">
+            <span>
               Discord
             </span>{' '}
-            <span className="text-brand-blue-100 drop-shadow-blue-glow">
+            <span >
               Server
             </span>
           </h1>
           <p className="text-lg text-neutral-700 dark:text-neutral-300">
-            Play fun and entertaining games with Would You, featuring user polls
-            and customization. Play Would You Rather, Truth or Dare, Never Have
-            I Ever, Higher or Lower, and What Would You Do!{' '}
-            <span className="hidden">tempus voicus</span>
+          Reviver provides your server with tons of interesting topics, fun facts, and memes to kill boredom. If you want to revive your chat, Reviver is the right choice! {' '}
           </p>
           <div className="flex flex-col lg:flex-row mt-8 items-center gap-4">
-            <AvatarGroup avatars={servers.slice(0, 5)} />
+            <AvatarGroup avatars={servers.sort((a, b) => b.memberCount - a.memberCount).slice(0, 5)} />
             <span className="text-foreground/50">
-              Trusted by your favorite servers!
+              Trusted by the biggest servers!
             </span>
           </div>
           <Link
@@ -72,7 +67,7 @@ export function HomeContent({
             className="mt-8 flex w-fit justify-center"
           >
             <Button className="gap-2">
-              Unleash the Fun
+              Revive Your Server
               <svg
                 width="13"
                 height="13"
@@ -101,14 +96,14 @@ export function HomeContent({
           <div className='w-dvw px-8 mx-auto'>
             <h2>
               Trusted by{' '}
-              <span className="bg-gradient-brand bg-clip-text font-bold text-transparent">
+              <span className="bg-indigo-500 bg-clip-text font-bold text-transparent">
                 {serverCount.toLocaleString()}+
               </span>{' '}
               communities
             </h2>
             <h3 className="mt-4 text-xl md:text-2xl px-12">
               keeping{' '}
-              <span className="bg-gradient-brand bg-clip-text font-bold text-transparent">
+              <span className="bg-indigo-500 bg-clip-text font-bold text-transparent">
                 4,000,000+
               </span>{' '}
               users entertained
@@ -126,7 +121,6 @@ export function HomeContent({
               direction="right"
             />
           </div>
-
         </div>
       </section>
 
@@ -138,11 +132,11 @@ export function HomeContent({
           transition={{ duration: 0.6, ease: 'easeInOut' }}
           className="flex flex-col items-center"
         >
-          <h2 className="bg-gradient-brand bg-clip-text text-6xl font-bold text-transparent">
+          <h2 className="bg-indigo-500 bg-clip-text text-6xl font-bold text-transparent">
             Features
           </h2>
           <h3 className="mt-4 text-center text-2xl">
-            What Does Would You Offer To Your Server?
+            What Does Reviver Offer Your Server?
           </h3>
         </m.div>
 
@@ -152,11 +146,10 @@ export function HomeContent({
           left={
             <>
               <h4 className="text-center text-3xl font-bold md:text-left">
-                Increase user engagement
+                Increase User Engagement
               </h4>
-              <p className="mx-auto text-center text-lg text-foreground/70 md:text-left">
-                Keep your community engaged and active with daily &quot;Would
-                You Rather&quot; messages!
+              <p className="text-center text-lg text-foreground/70 md:text-left">
+              Keep your server active with interesting facts to think about and discuss.
               </p>
             </>
           }
@@ -166,12 +159,10 @@ export function HomeContent({
           left={
             <>
               <h4 className="text-center text-3xl font-bold md:text-left">
-                Entertain your server
+                Revive Your Chat
               </h4>
               <p className="text-center text-lg text-foreground/70 md:text-left">
-                Entertain your discord server with fun and interactive games
-                like Would You Rather, Truth or Dare, Never Have I Ever, Higher
-                or Lower, and What Would You Do!
+                Revive your chat with tons of interesting topics, fun facts, and memes to kill boredom.
               </p>
             </>
           }
@@ -180,15 +171,15 @@ export function HomeContent({
 
         <FeatureItem
           reverse
-          right={<NeverHaveIEverEmbed initialQuestion={initialNhieQuestion} />}
+          right={<NeverHaveIEverEmbed />}
           left={
             <>
               <h4 className="text-center text-3xl font-bold md:text-left">
                 Upgrade your server
               </h4>
               <p className="text-center text-lg text-foreground/70 md:text-left">
-                Upgrade your server with Would You, featuring a wide variety of
-                games and customized questions.
+                Upgrade your server with Reviver, featuring a wide variety of
+                topics, interesting facts, and would you rather questions to keep your server active.
               </p>
             </>
           }
@@ -203,9 +194,9 @@ export function HomeContent({
           transition={{ duration: 0.65, ease: 'easeInOut' }}
           className="text-center text-5xl font-bold leading-normal text-foreground"
         >
-          Keep Your Server Active with{' '}
-          <span className="bg-gradient-brand bg-clip-text font-bold text-transparent">
-            Would You
+          Let Your Server Thrive{' '}
+          <span className="bg-indigo-500 bg-clip-text font-bold text-transparent">
+            Reviver
           </span>
         </m.h2>
         <m.h3

@@ -4,13 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",
-    "debug": "next dev -p 2123",
+    "debug": "next dev -p 2224",
     "build": "next build",
-    "start": "node .next/standalone/server.js -p 2123",
+    "start": "node .next/standalone/server.js -p 2224",
     "lint": "next lint",
     "format": "prettier --write ./**/*.{ts,tsx}",
-    "postbuild": "node sitemap.js && node rss.js",
-    "docker:build": "docker compose build -t website-wy",
+    "postbuild": "next-sitemap",
+    "docker:build": "docker compose build -t website-rv",
     "docker:start": "docker compose up -d"
   },
   "dependencies": {
@@ -31,8 +31,9 @@
     "grey-matter": "^0.0.0",
     "lucide-react": "^0.376.0",
     "mongoose": "^8.4.0",
-    "next": "14.2.3",
+    "next": "14.2.7",
     "next-mdx-remote": "^4.4.1",
+    "next-sitemap": "^4.2.3",
     "next-themes": "^0.3.0",
     "oslo": "^1.2.0",
     "react": "^18",

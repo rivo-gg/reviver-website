@@ -1,1 +1,0 @@
-export { ServersListSkeleton } from './ServersListSkeleton'

@@ -24,10 +24,6 @@ const config = {
       },
       colors: {
         brand: {
-          customPrimary: 'rgb(5, 152, 244)',
-          customPrimaryLight: 'rgb(60, 178, 251)',
-          customSecondary: 'rgb(5, 152, 244)',
-          customDarkBg1: 'rgb(3, 122, 199)',
           customDarkBg2: 'rgb(23, 23, 23)',
           customDarkBg3: 'rgb(20, 20, 20)',
           customDarkBg3Hover: 'rgb(55, 56, 62)',
@@ -37,8 +33,7 @@ const config = {
           customDarkBgTransparent: 'rgb(31, 32, 35, 0.7)',
           customDarkBgTransparentDarker: 'rgb(0,0,0,0.5)',
           customDarkBgTransparentLighter: 'rgb(48, 49, 54, 0.7)',
-          blue: { 100: '#0598F4', 200: '#037ac7', 300: '#016cb0' },
-          red: { 100: '#F00605', 200: '#b60505', 300: '#9a0404' }
+          blue: { 100: '#4FC9FF', 200: '#87CBE9', 300: '#87CBE9' },
         },
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
@@ -107,12 +102,6 @@ const config = {
         ['blue-glow']: ['2px 2px 10px #0598f6'],
         ['gold-glow']: ['2px 2px 10px #eab308']
       },
-      backgroundImage: {
-        ['gradient-premium']:
-          'linear-gradient(to bottom right, #0598F4 0%,#F00605 100%)',
-        ['gradient-brand']:
-          'linear-gradient(92.91deg, #0598F4 -50%,#F00605 150%)'
-      }
     }
   },
   plugins: [require('tailwindcss-animate')]

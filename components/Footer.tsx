@@ -15,16 +15,6 @@ const Footer = async () => {
       link: '/commands',
       EventTarget: '_self'
     },
-    {
-      name: 'Team',
-      link: '/team',
-      EventTarget: '_self'
-    },
-    {
-      name: 'Reddit',
-      link: '/reddit',
-      EventTarget: '_blank'
-    }
   ]
 
   const Links = [
@@ -61,11 +51,6 @@ const Footer = async () => {
       link: '/terms',
       EventTarget: '_self'
     },
-    {
-      name: 'Refund Policy',
-      link: '/refunds',
-      EventTarget: '_self'
-    }
   ]
 
   return (
@@ -81,7 +66,7 @@ const Footer = async () => {
               height="40"
               priority
             />
-            <p className="ml-3">Would You</p>
+            <p className="ml-3">Reviver</p>
           </div>
           <p className="mt-4 text-center text-sm md:text-left">
             &copy; {new Date().getFullYear()}{' '}
@@ -148,10 +133,10 @@ const Footer = async () => {
         <p className="mt-8 text-center text-sm text-foreground/70">
           Made with <span className="text-brand-red-100">♥</span> by{' '}
           <Link
-            href="/team"
+            href="https://wouldyoubot.gg/team/"
             className="text-foreground underline"
           >
-            Would You Team
+            Reviver Team
           </Link>{' '}
           &{' '}
           <Link

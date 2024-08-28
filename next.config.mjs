@@ -7,20 +7,20 @@ const nextConfig = {
   },
   experimental: {
     serverActions: {
-      allowedForwardedHosts: ['wouldyoubot.gg'],
-      allowedOrigins: ['wouldyoubot.gg']
+      allowedForwardedHosts: ['reviverbot.com'],
+      allowedOrigins: ['reviverbot.com']
     }
   },
   async redirects() {
     return [
       {
         source: '/vote',
-        destination: 'https://wumpus.store/bot/981649513427111957/vote',
+        destination: 'https://top.gg/bot/385824713819029504/vote',
         permanent: true
       },
       {
         source: '/support',
-        destination: 'https://discord.com/invite/vMyXAxEznS',
+        destination: 'https://discord.gg/7dhnR9uUvW',
         permanent: true
       },
       {
@@ -31,12 +31,7 @@ const nextConfig = {
       {
         source: '/invite',
         destination:
-          'https://discord.com/oauth2/authorize?client_id=981649513427111957&permissions=275415247936&scope=bot%20applications.commands',
-        permanent: true
-      },
-      {
-        source: '/reddit',
-        destination: 'https://www.reddit.com/r/WouldYou/',
+          'https://discord.com/oauth2/authorize?client_id=385824713819029504&permissions=335932480&scope=bot%20applications.commands',
         permanent: true
       },
       {

@@ -34,6 +34,7 @@ const ServerMarquee: FC<MarqueeProps> = ({
       <Marquee
         className="flex w-max items-center overflow-hidden"
         play
+        autoFill={true}
         speed={speed}
         direction={direction ?? 'left'}
         gradient={true}

@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function legalnotice() {
   return (
     <main className="flex mx-auto w-full max-w-8xl flex-col gap-8 px-8 text-foreground/70">
-      <h1 className="text-4xl font-bold text-brand-red-100 drop-shadow-red-glow">
+      <h1 className="text-4xl font-bold text-white">
         Legal Notice
       </h1>
       <p>
@@ -38,7 +38,7 @@ export default function legalnotice() {
         </p>
       </div>
       <p>No acceptance of parcels or packages.</p>
-      <p className="select-none">Email: dominik@wouldyoubot.com</p>
+      <p className="select-none">Email: dominik@rivo.gg</p>
       <p className="select-none">Phone: +49 151 23793107</p>
       <div>
         <h3 className="text-lg font-bold text-foreground">
@@ -60,10 +60,10 @@ export default function legalnotice() {
       <div>
         <h3 className="text-lg font-bold text-foreground">Privacy Policy</h3>
         <Link
-          href="https://wouldyoubot.gg/privacy/"
+          href="https://reviverbot.com/privacy/"
           className="text-foreground underline"
         >
-          https://wouldyoubot.gg/privacy/
+          https://reviverbot.com/privacy/
         </Link>
       </div>
       <div>
@@ -77,17 +77,10 @@ export default function legalnotice() {
       </div>
       <div className="text-foreground">
         <Link
-          href="https://wouldyoubot.com/"
+          href="https://reviverbot.com/"
           className="underline"
         >
-          https://wouldyoubot.com/
-        </Link>
-        <br />
-        <Link
-          href="https://wouldyoubot.gg/"
-          className="underline"
-        >
-          https://wouldyoubot.gg/
+          https://reviverbot.com/
         </Link>
         <br />
 
@@ -98,19 +91,13 @@ export default function legalnotice() {
           https://rivo.gg/
         </Link>
         <br />
-        <Link
-          href="https://twitter.com/WouldYouBot/"
-          className="underline"
-        >
-          https://twitter.com/WouldYouBot/
-        </Link>
       </div>
       <p>
         The Discord bot with the id{' '}
-        <span className="font-mono text-foreground">981649513427111957</span>
+        <span className="font-mono text-foreground">385824713819029504</span>
         <br />
         The Discord server with the id{' '}
-        <span className="font-mono text-foreground">1009562516105461780</span>
+        <span className="font-mono text-foreground">721297781880258592</span>
       </p>
     </main>
   )

@@ -3,7 +3,7 @@ import { VariantProps, cva } from 'class-variance-authority'
 const button = cva('flex items-center rounded-lg px-6 py-3 transition-all', {
   variants: {
     variant: {
-      blue: 'bg-brand-blue-100 hover:bg-brand-blue-200 text-white',
+      blue: 'bg-indigo-500 hover:bg-indigo-500/90 text-white',
       red: 'bg-brand-red-100 hover:bg-brand-red-200 text-white'
     }
   },

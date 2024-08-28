@@ -1,38 +1,15 @@
 'use client'
-import DiscordLoginButton from '@/components/DiscordLoginButton'
-import { LayoutDashboardIcon, Moon, Sun } from 'lucide-react'
-import { useIdToken } from '@/helpers/hooks/useIdToken'
-import { useAnimationControls } from 'framer-motion'
-import { IdTokenJWT } from '@/helpers/oauth/types'
-import { Button } from '@/components/ui/button'
-import UserDropdown from './UserDropdown'
+import DiscordInviteButton from '@/components/DiscordInviteButton'
+import { Moon, Sun } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { Crown } from '@/icons/Crown'
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-interface NavbarProps {
-  idToken: IdTokenJWT | null
-}
-
-const menuItems = [
-  {
-    label: 'Manage Subscription',
-    href: '/api/subs/manage',
-    icon: LayoutDashboardIcon
-  }
-]
-
-const Navbar = ({ idToken: idToken_ }: NavbarProps) => {
+const Navbar = () => {
   const { setTheme, theme } = useTheme()
-  const [mobileMenu, setMobileMenu] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
-  const idToken = useIdToken(idToken_)
-  const lineOneControls = useAnimationControls()
-  const lineTwoControls = useAnimationControls()
-  const lineThreeControls = useAnimationControls()
-  const menuControls = useAnimationControls()
 
   const handleIsOpen = () => {
     if (window.innerWidth < 768) setIsOpen(!isOpen)
@@ -49,12 +26,12 @@ const Navbar = ({ idToken: idToken_ }: NavbarProps) => {
             <Image
               src="/Logo.svg"
               className="rounded-full"
-              alt="Would You Logo"
+              alt="Reviver Logo"
               width="30"
               height="30"
               priority
             />
-            <p className="text-xl font-bold text-foreground">Would You</p>
+            <p className="text-xl font-bold text-foreground">Reviver</p>
           </Link>
         </div>
         <div
@@ -68,12 +45,6 @@ const Navbar = ({ idToken: idToken_ }: NavbarProps) => {
               Commands
             </Link>
             <Link
-              href="/blog"
-              className="text-lg text-foreground/70 transition-all hover:text-foreground/90"
-            >
-              Blog
-            </Link>
-            <Link
               href="/vote"
               target="_blank"
               className="text-lg text-foreground/70 transition-all hover:text-foreground/90 hidden lg:block"
@@ -81,11 +52,11 @@ const Navbar = ({ idToken: idToken_ }: NavbarProps) => {
               Vote
             </Link>
             <Link
-              href="/premium"
-              className="flex items-center gap-2 text-lg text-yellow-500 dark:text-yellow-500 transition-all hover:text-yellow-600 dark:hover:text-yellow-400"
+              href="/support"
+              target="_blank"
+              className="text-lg text-foreground/70 transition-all hover:text-foreground/90 hidden lg:block"
             >
-              Premium
-              <Crown />
+              Support
             </Link>
           </div>
           <button
@@ -143,12 +114,7 @@ const Navbar = ({ idToken: idToken_ }: NavbarProps) => {
               Premium
               <Crown />
             </Link>
-            {idToken ?
-              <UserDropdown
-                idToken={idToken}
-                items={menuItems}
-              />
-            : <DiscordLoginButton className="h-16 rounded-[10px] px-6" />}
+             <DiscordInviteButton className="h-16 rounded-[10px] px-6" />
           </div>
         </div>
         <div className="hidden h-16 min-w-fit items-center justify-center md:flex gap-1 p-1 rounded-xl border-2 border-foreground/5 bg-background-light/90 backdrop-blur">
@@ -160,12 +126,7 @@ const Navbar = ({ idToken: idToken_ }: NavbarProps) => {
               <Moon className="w-6 h-6 sm:w-7 sm:h-7" />
             : <Sun className="w-6 h-6 sm:w-7 sm:h-7" />}
           </button>
-          {idToken ?
-            <UserDropdown
-              idToken={idToken}
-              items={menuItems}
-            />
-          : <DiscordLoginButton className="h-full rounded-[8px] px-6" />}
+          <DiscordInviteButton className="h-full rounded-[8px] px-6" />
         </div>
       </div>
     </nav>

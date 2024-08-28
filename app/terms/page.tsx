@@ -3,23 +3,23 @@ import Link from 'next/link'
 export default function Terms() {
   return (
     <main className="flex mx-auto w-full max-w-8xl flex-col gap-8 px-8 text-foreground/70">
-      <h1 className="text-4xl font-bold text-brand-red-100 drop-shadow-red-glow">
+      <h1 className="text-4xl font-bold text-white">
         Terms of Service
       </h1>
       <div>
         <h3 className="my-4 text-lg font-bold text-foreground">
-          Last updated and effective: May 16, 2024
+          Last updated and effective: August 28, 2024
         </h3>
         <h3 className="my-4 text-lg font-bold text-foreground">
           Agreement to Terms
         </h3>
         <p>
-          These terms of service (the &quot;Terms&quot;) apply to the Would You
-          Discord bot. By using Would You, you agree to be bound by these Terms
+          These terms of service (the &quot;Terms&quot;) apply to the Reviver
+          Discord bot. By using Reviver, you agree to be bound by these Terms
           and any additional terms that may be provided by the Company. If you
-          do not agree to these Terms, you may not use Would You.
+          do not agree to these Terms, you may not use Reviver.
           <br />
-          Would You is a bot for the chat and social platform
+          Reviver is a bot for the chat and social platform
           &quot;Discord&quot; (accessible at{' '}
           <Link
             href="https://discord.com"
@@ -37,7 +37,7 @@ export default function Terms() {
           >
             https://discord.dev
           </Link>
-          , including its Terms of Service and Privacy Policy). Would You is
+          , including its Terms of Service and Privacy Policy). Reviver is
           strictly following Discord&apos;s &quot;Developer terms&quot;, does
           not want, is not trying to and is not knowingly abusing any of
           Discord&apos;s services.
@@ -47,50 +47,20 @@ export default function Terms() {
           1. Age Restriction
         </h3>
         <p>
-          The Would You Bot is not intended for use by individuals under the age
-          of 13. By using the Would You Bot, you represent and warrant that you
+          The Reviver Bot is not intended for use by individuals under the age
+          of 13. By using the Reviver Bot, you represent and warrant that you
           are at least 13 years of age. If you are under 13 years of age, you
-          are not permitted to use the Would You Bot. If we become aware that a
+          are not permitted to use the Reviver Bot. If we become aware that a
           user is under the age of 13, we will take steps to terminate their
-          access to the Would You Bot and delete any personal information
+          access to the Reviver Bot and delete any personal information
           collected from them, if applicable.
         </p>
 
         <h3 className="my-4 text-lg font-bold text-foreground">
-          2. Premium Subscription
+          2. Intellectual property rights
         </h3>
         <p>
-          The Would You discord Bot offers a premium subscription model
-          (&quot;Premium Model&quot;) that provides additional features and
-          benefits. By subscribing to the Premium Model, you agree to pay the
-          specified subscription fee on a recurring basis using the payment
-          processing services of Stripe, Inc. (&quot;Stripe&quot;).
-        </p>
-        <h4 className="text-md text-foreground-400 my-4 font-bold">
-          2.1 Payment Processing
-        </h4>
-        <p>
-          All payments for the Premium Service are processed securely through
-          Stripe. By subscribing to the Premium Model, you authorise the Creator
-          to automatically charge the applicable subscription fee to your chosen
-          payment method on a recurring basis until you cancel your
-          subscription.{' '}
-        </p>
-        <h4 className="text-md text-foreground-400 my-4 font-bold">
-          2.2 Cancellation and Refunds
-        </h4>
-        <p>
-          You may cancel your subscription to the Premium Model at any time by
-          following the cancellation instructions provided by Stripe or by
-          contacting the Creator directly. No refunds will be given for any
-          unused portion of the subscription period.
-        </p>
-
-        <h3 className="my-4 text-lg font-bold text-foreground">
-          3. Intellectual property rights
-        </h3>
-        <p>
-          Would You and all content and software associated with the bot,
+          Reviver and all content and software associated with the bot,
           including but not limited to text, graphics, logos, and images, are
           the property of the Company and are protected by copyright and other
           intellectual property laws. You may not use any of these materials for
@@ -107,7 +77,7 @@ export default function Terms() {
         </p>
 
         <h3 className="my-4 text-lg font-bold text-foreground">
-          4. User representations
+          3. User representations
         </h3>
         <p>
           By using the Site, you represent and warrant that: (1) you have the
@@ -126,7 +96,7 @@ export default function Terms() {
         </p>
 
         <h3 className="my-4 text-lg font-bold text-foreground">
-          5. Warranty Disclaimer
+          4. Warranty Disclaimer
         </h3>
         <p>
           1. The bot may experience downtime, errors, or technical issues beyond
@@ -144,7 +114,7 @@ export default function Terms() {
           <br />
         </p>
 
-        <h3 className="my-4 text-lg font-bold text-foreground">6. Products</h3>
+        <h3 className="my-4 text-lg font-bold text-foreground">5. Products</h3>
         <p>
           All products are subject to availability. We reserve the right to
           discontinue any products at any time for any reason. Prices for all
@@ -152,7 +122,7 @@ export default function Terms() {
         </p>
 
         <h3 className="my-4 text-lg font-bold text-foreground">
-          7. Contribution licence
+          6. Contribution licence
         </h3>
         <p>
           You and Site agree that we may access, store, process, and use any
@@ -176,7 +146,7 @@ export default function Terms() {
         </p>
 
         <h3 className="my-4 text-lg font-bold text-foreground">
-          8. Term and Termination
+          7. Term and Termination
         </h3>
         <p>
           These Terms of Use shall remain in full force and effect while you use
@@ -202,7 +172,7 @@ export default function Terms() {
         </p>
 
         <h3 className="my-4 text-lg font-bold text-foreground">
-          9. Modifications and interruptions
+          8. Modifications and interruptions
         </h3>
         <p>
           The company reserves the right to change, modify, or remove the
@@ -231,12 +201,12 @@ export default function Terms() {
         </p>
 
         <h3 className="my-4 text-lg font-bold text-foreground">
-          10. Governing Law
+          9. Governing Law
         </h3>
         <p>
-          These Terms and your use of Would You will be governed by and
+          These Terms and your use of Reviver will be governed by and
           construed in accordance with the laws of Germany. Any dispute arising
-          out of or in connection with these Terms or Would You will be resolved
+          out of or in connection with these Terms or Reviver will be resolved
           through binding arbitration in accordance with the rules of the
           International Chamber of Commerce. You agree that we may take action
           against you if you attack or harm our services. You agree that we may
@@ -245,31 +215,31 @@ export default function Terms() {
         </p>
 
         <h3 className="my-4 text-lg font-bold text-foreground">
-          11. Disclaimer
+          10. Disclaimer
         </h3>
         <p>
-          Would You is provided &quot;as is&quot; and &quot;as available&quot;,
+          Reviver is provided &quot;as is&quot; and &quot;as available&quot;,
           and the Company makes no warranties of any kind, express or implied,
           including but not limited to warranties of merchantability, fitness
           for a particular purpose, and non-infringement. The Company does not
-          guarantee that Would You will be available at all times or that it
+          guarantee that Reviver will be available at all times or that it
           will be error-free. In no event shall we be liable for any damages
           arising from the use of the Discord Bot. It is therefore recommended
           to use it only with the required permissions.
         </p>
 
         <h3 className="my-4 text-lg font-bold text-foreground">
-          12. Limitation of Liability
+          11. Limitation of Liability
         </h3>
         <p>
           The Company will not be liable to you or any third party for any
-          damages arising out of or in connection with your use of Would You,
+          damages arising out of or in connection with your use of Reviver,
           including but not limited to direct, indirect, incidental,
           consequential, and punitive damages.
         </p>
 
         <h3 className="my-4 text-lg font-bold text-foreground">
-          13. Miscellaneous
+          12. Miscellaneous
         </h3>
         <p>
           These Terms of Use and any policies or operating rules posted by us on
