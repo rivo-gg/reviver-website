@@ -44,9 +44,9 @@ const NeverHaveIEverEmbed = () => {
           </DiscordEmbedDescription>
           <DiscordEmbedFooter
             slot="footer"
-            footerImage="./staff/paulos.webp"
+            footerImage="./staff/Paulos.webp"
           >
-            Requested by paulos | TOPIC ID: 660
+            Requested by paulos | TOPIC ID: 849
           </DiscordEmbedFooter>
         </DiscordEmbed>
       </DiscordMessage>
