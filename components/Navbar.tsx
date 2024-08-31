@@ -92,13 +92,6 @@ const Navbar = () => {
               Commands
             </Link>
             <Link
-              href="/blog"
-              onClick={handleIsOpen}
-              className="text-2xl text-foreground/70 transition-all hover:text-foreground/90"
-            >
-              Blog
-            </Link>
-            <Link
               href="/vote"
               target="_blank"
               onClick={handleIsOpen}
@@ -107,12 +100,12 @@ const Navbar = () => {
               Vote
             </Link>
             <Link
-              href="/premium"
+              href="/support"
+              target="_blank"
               onClick={handleIsOpen}
-              className="flex items-center gap-2 text-2xl text-yellow-500 dark:text-yellow-500 transition-all hover:text-yellow-600 dark:hover:text-yellow-400"
+              className="text-2xl text-foreground/70 transition-all hover:text-foreground/90"
             >
-              Premium
-              <Crown />
+              Support
             </Link>
             <DiscordInviteButton className="h-16 rounded-[10px] px-6" />
           </div>
