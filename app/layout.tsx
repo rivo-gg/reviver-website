@@ -15,9 +15,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <script
-        defer
-        data-domain="reviverbot.com"
-        src="https://stats.wouldyoubot.gg/js/script.js"
+        src="https://app.databuddy.cc/databuddy.js"
+        data-client-id="J6hpZqxCH0W1pW9-dL6PK"
+        data-track-web-vitals="true"
+        data-enable-batching="true"
+        crossOrigin="anonymous"
+        async
       ></script>
       <body className={inter.className}>
         <ThemeProvider
